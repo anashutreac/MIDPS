@@ -42,7 +42,7 @@
             this.multiplicate = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
             this.dot_button = new System.Windows.Forms.Button();
-            this.zero = new System.Windows.Forms.Button();
+            this.button_0 = new System.Windows.Forms.Button();
             this.change_sign = new System.Windows.Forms.Button();
             this.left_bracket = new System.Windows.Forms.Button();
             this.right_bracket = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             this.backslash = new System.Windows.Forms.Button();
             this.equal = new System.Windows.Forms.Button();
             this.pow_2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button_1
@@ -171,7 +172,7 @@
             this.multiplicate.TabIndex = 11;
             this.multiplicate.Text = "x";
             this.multiplicate.UseVisualStyleBackColor = true;
-            this.multiplicate.Click += new System.EventHandler(this.button12_Click);
+            this.multiplicate.Click += new System.EventHandler(this.multiplicate_Click);
             // 
             // divide
             // 
@@ -193,15 +194,15 @@
             this.dot_button.UseVisualStyleBackColor = true;
             this.dot_button.Click += new System.EventHandler(this.dot_button_Click);
             // 
-            // zero
+            // button_0
             // 
-            this.zero.Location = new System.Drawing.Point(11, 300);
-            this.zero.Name = "zero";
-            this.zero.Size = new System.Drawing.Size(52, 37);
-            this.zero.TabIndex = 14;
-            this.zero.Text = "0";
-            this.zero.UseVisualStyleBackColor = true;
-            this.zero.Click += new System.EventHandler(this.button15_Click);
+            this.button_0.Location = new System.Drawing.Point(11, 300);
+            this.button_0.Name = "button_0";
+            this.button_0.Size = new System.Drawing.Size(52, 37);
+            this.button_0.TabIndex = 14;
+            this.button_0.Text = "0";
+            this.button_0.UseVisualStyleBackColor = true;
+            this.button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // change_sign
             // 
@@ -283,11 +284,21 @@
             this.pow_2.UseVisualStyleBackColor = true;
             this.pow_2.Click += new System.EventHandler(this.pow_2_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 25);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(294, 79);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 340);
+            this.ClientSize = new System.Drawing.Size(314, 340);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pow_2);
             this.Controls.Add(this.equal);
             this.Controls.Add(this.backslash);
@@ -296,7 +307,7 @@
             this.Controls.Add(this.right_bracket);
             this.Controls.Add(this.left_bracket);
             this.Controls.Add(this.change_sign);
-            this.Controls.Add(this.zero);
+            this.Controls.Add(this.button_0);
             this.Controls.Add(this.dot_button);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.multiplicate);
@@ -315,6 +326,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -334,7 +346,7 @@
         private System.Windows.Forms.Button multiplicate;
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Button dot_button;
-        private System.Windows.Forms.Button zero;
+        private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.Button change_sign;
         private System.Windows.Forms.Button left_bracket;
         private System.Windows.Forms.Button right_bracket;
@@ -343,6 +355,7 @@
         private System.Windows.Forms.Button backslash;
         private System.Windows.Forms.Button equal;
         private System.Windows.Forms.Button pow_2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
