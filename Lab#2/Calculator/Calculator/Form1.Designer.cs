@@ -44,10 +44,10 @@
             this.dot_button = new System.Windows.Forms.Button();
             this.button_0 = new System.Windows.Forms.Button();
             this.change_sign = new System.Windows.Forms.Button();
-            this.left_bracket = new System.Windows.Forms.Button();
-            this.right_bracket = new System.Windows.Forms.Button();
+            this.lg_x = new System.Windows.Forms.Button();
+            this.factor_real = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
-            this.cut_button = new System.Windows.Forms.Button();
+            this.allclear_button = new System.Windows.Forms.Button();
             this.backslash = new System.Windows.Forms.Button();
             this.equal = new System.Windows.Forms.Button();
             this.pow_2 = new System.Windows.Forms.Button();
@@ -214,25 +214,25 @@
             this.change_sign.UseVisualStyleBackColor = true;
             this.change_sign.Click += new System.EventHandler(this.change_sign_Click);
             // 
-            // left_bracket
+            // lg_x
             // 
-            this.left_bracket.Location = new System.Drawing.Point(13, 128);
-            this.left_bracket.Name = "left_bracket";
-            this.left_bracket.Size = new System.Drawing.Size(50, 36);
-            this.left_bracket.TabIndex = 17;
-            this.left_bracket.Text = "(";
-            this.left_bracket.UseVisualStyleBackColor = true;
-            this.left_bracket.Click += new System.EventHandler(this.left_bracket_Click);
+            this.lg_x.Location = new System.Drawing.Point(13, 128);
+            this.lg_x.Name = "lg_x";
+            this.lg_x.Size = new System.Drawing.Size(50, 36);
+            this.lg_x.TabIndex = 17;
+            this.lg_x.Text = "log x";
+            this.lg_x.UseVisualStyleBackColor = true;
+            this.lg_x.Click += new System.EventHandler(this.lg_x_Click);
             // 
-            // right_bracket
+            // factor_real
             // 
-            this.right_bracket.Location = new System.Drawing.Point(68, 128);
-            this.right_bracket.Name = "right_bracket";
-            this.right_bracket.Size = new System.Drawing.Size(51, 36);
-            this.right_bracket.TabIndex = 18;
-            this.right_bracket.Text = ")";
-            this.right_bracket.UseVisualStyleBackColor = true;
-            this.right_bracket.Click += new System.EventHandler(this.button18_Click);
+            this.factor_real.Location = new System.Drawing.Point(68, 128);
+            this.factor_real.Name = "factor_real";
+            this.factor_real.Size = new System.Drawing.Size(51, 36);
+            this.factor_real.TabIndex = 18;
+            this.factor_real.Text = "x!";
+            this.factor_real.UseVisualStyleBackColor = true;
+            this.factor_real.Click += new System.EventHandler(this.factor_real_Click);
             // 
             // sqrt
             // 
@@ -242,17 +242,17 @@
             this.sqrt.TabIndex = 19;
             this.sqrt.Text = "sqrt";
             this.sqrt.UseVisualStyleBackColor = true;
-            this.sqrt.Click += new System.EventHandler(this.button19_Click);
+            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
             // 
-            // cut_button
+            // allclear_button
             // 
-            this.cut_button.Location = new System.Drawing.Point(257, 128);
-            this.cut_button.Name = "cut_button";
-            this.cut_button.Size = new System.Drawing.Size(49, 79);
-            this.cut_button.TabIndex = 20;
-            this.cut_button.Text = "C";
-            this.cut_button.UseVisualStyleBackColor = true;
-            this.cut_button.Click += new System.EventHandler(this.cut_button_Click);
+            this.allclear_button.Location = new System.Drawing.Point(257, 128);
+            this.allclear_button.Name = "allclear_button";
+            this.allclear_button.Size = new System.Drawing.Size(49, 79);
+            this.allclear_button.TabIndex = 20;
+            this.allclear_button.Text = "AC";
+            this.allclear_button.UseVisualStyleBackColor = true;
+            this.allclear_button.Click += new System.EventHandler(this.cut_button_Click);
             // 
             // backslash
             // 
@@ -260,7 +260,7 @@
             this.backslash.Name = "backslash";
             this.backslash.Size = new System.Drawing.Size(49, 36);
             this.backslash.TabIndex = 21;
-            this.backslash.Text = "AC";
+            this.backslash.Text = "CE";
             this.backslash.UseVisualStyleBackColor = true;
             this.backslash.Click += new System.EventHandler(this.backslash_Click);
             // 
@@ -302,10 +302,10 @@
             this.Controls.Add(this.pow_2);
             this.Controls.Add(this.equal);
             this.Controls.Add(this.backslash);
-            this.Controls.Add(this.cut_button);
+            this.Controls.Add(this.allclear_button);
             this.Controls.Add(this.sqrt);
-            this.Controls.Add(this.right_bracket);
-            this.Controls.Add(this.left_bracket);
+            this.Controls.Add(this.factor_real);
+            this.Controls.Add(this.lg_x);
             this.Controls.Add(this.change_sign);
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.dot_button);
@@ -348,10 +348,10 @@
         private System.Windows.Forms.Button dot_button;
         private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.Button change_sign;
-        private System.Windows.Forms.Button left_bracket;
-        private System.Windows.Forms.Button right_bracket;
+        private System.Windows.Forms.Button lg_x;
+        private System.Windows.Forms.Button factor_real;
         private System.Windows.Forms.Button sqrt;
-        private System.Windows.Forms.Button cut_button;
+        private System.Windows.Forms.Button allclear_button;
         private System.Windows.Forms.Button backslash;
         private System.Windows.Forms.Button equal;
         private System.Windows.Forms.Button pow_2;
