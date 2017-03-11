@@ -299,7 +299,7 @@
             // pow_2
             // 
             this.pow_2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pow_2.Location = new System.Drawing.Point(184, 128);
+            this.pow_2.Location = new System.Drawing.Point(184, 127);
             this.pow_2.Name = "pow_2";
             this.pow_2.Size = new System.Drawing.Size(67, 36);
             this.pow_2.TabIndex = 23;
@@ -348,11 +348,13 @@
             this.Controls.Add(this.button_3);
             this.Controls.Add(this.button_2);
             this.Controls.Add(this.button_1);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Calculator";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += Form1_KeyPress;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,6 +386,7 @@
         private System.Windows.Forms.Button equal;
         private System.Windows.Forms.Button pow_2;
         private System.Windows.Forms.TextBox textBox1;
+        
     }
 }
 

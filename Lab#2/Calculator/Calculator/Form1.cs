@@ -20,6 +20,102 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
+
+        }
+        private void Form1_KeyPress(object sender, KeyEventArgs e)
+        {
+            // System.Console.WriteLine(e.KeyChar);
+            if (e.KeyCode == Keys.D0)
+            {
+                button_0.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D1)
+            {
+                button_1.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D2)
+            {
+                button_2.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D3)
+            {
+                button_3.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D4)
+            {
+                button_4.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D5)
+            {
+                button_5.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D6)
+            {
+                button_6.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D7)
+            {
+                button_7.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D8)
+            {
+                button_8.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D9)
+            {
+                button_9.PerformClick();
+            }
+            else if (e.KeyCode == Keys.D0)
+            {
+                button_0.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad1)
+            {
+                button_1.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad2)
+            {
+                button_2.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad3)
+            {
+                button_3.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad4)
+            {
+                button_4.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad5)
+            {
+                button_5.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad6)
+            {
+                button_6.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad7)
+            {
+                button_7.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad8)
+            {
+                button_8.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad9)
+            {
+                button_9.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad0)
+            {
+                button_0.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                plus.PerformClick();
+            }
+
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -241,5 +337,41 @@ namespace Calculator
         {
 
         }
-    }
-}
+
+     /* private void keyboard(object sender, KeyPressEventArgs e)
+        {
+            switch(e.KeyChar.ToString())
+            {
+                case "D0":
+                    button_0.PerformClick();
+                    break;
+                case "1":
+                    button_1.PerformClick();
+                    break;
+                case "3":
+                    button_3.PerformClick();
+                    break;
+                case "4":
+                    button_4.PerformClick();
+                    break;
+                case "5":
+                    button_5.PerformClick();
+                    break;
+                case "6":
+                    button_6.PerformClick();
+                    break;
+                case "7":
+                    button_7.PerformClick();
+                    break;
+                case "8":
+                    button_8.PerformClick();
+                    break;
+                case "9":
+                    button_9.PerformClick();
+                    break;
+            }
+
+        }*/ 
+       }
+   }
+
