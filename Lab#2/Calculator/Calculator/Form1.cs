@@ -113,7 +113,18 @@ namespace Calculator
             {
                 plus.PerformClick();
             }
-
+            else if (e.KeyCode == Keys.Divide)
+            {
+                divide.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Multiply)
+            {
+                multiplicate.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                equal.PerformClick();
+            }
 
 
         }
