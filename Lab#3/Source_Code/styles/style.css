@@ -1,16 +1,15 @@
  #div_box_1
  {
-   width: 96%;
-   border: 1px black dashed;
-   border-bottom: 4px solid  rgb(3, 35, 86);
-   height: 18%;
+   width: 100%;
+   border: 1px white;
+   border-bottom: 4px solid  rgb(18, 6, 57);
+   height: 20%;
    
    margin: 0 auto;
    padding: 1%;
  }
  #div_box_2
  {
-  position: relative;
   width: 47%;
   left: 57%;
   border: 1px black dashed;
@@ -18,18 +17,18 @@
 #menu_1 {
   list-style-type: none;
   margin: 1px;
-  border: 1px black dashed;
-  padding: 0;
+  padding-left: 240px;
   overflow: hidden;
 }
 
 #menu_2
 {
   list-style-type: none;
-  margin: 13px;
+  width: 100%;
   margin-top: 5px;
   border: 1px black dashed;
-  background-color: rgb(3, 35, 86);
+  background-color:rgb(18, 6, 57);
+
   padding: 0;
   overflow: hidden;
 }
@@ -56,10 +55,18 @@ a:hover {
 .menu_2_link
 {
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-decoration:none;
-  display: inline-block;
-  padding: 16px 14px;
+  font-family: 'Crimson Text', serif;
+  text-decoration: none;
+  display: block;
+  font-size: 22px;
+  padding: 16px 40px;
+}
+
+.menu_2_link:hover 
+{
+  background-color:  rgb(14,72,171);
+   text-decoration: none;
+   color:white;
 }
 
 #div_box_3
@@ -72,7 +79,7 @@ a:hover {
 }
 #div_box_6
 {
-  background-color: rgb(61, 60, 79);
+  background-color: rgb(18, 6, 57);
   width: 100%;
   height: 40%;
   color:white;
@@ -85,5 +92,11 @@ p
 }
 img
 {
-position: relative;
+width: 75%;
+height: 75%;
 }
+
+.mySlides 
+ {
+  display:none;
+  }
