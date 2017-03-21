@@ -2,7 +2,7 @@
  {
    width: 100%;
    border: 1px white;
-   border-bottom: 4px solid  rgb(18, 6, 57);
+   border-bottom: 3px rgb(18, 6, 57) solid;
    height: 20%;
    
    margin: 0 auto;
@@ -26,6 +26,7 @@
   list-style-type: none;
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 5px;
   border: 1px black dashed;
   background-color:rgb(18, 6, 57);
 
@@ -33,6 +34,7 @@
   overflow: hidden;
 }
 .li_work {
+  float:center;
   display:block;
   color: red;
 }
@@ -59,7 +61,7 @@ a:hover {
   text-decoration: none;
   display: block;
   font-size: 22px;
-  padding: 16px 40px;
+  padding: 14px 35px;
 }
 
 .menu_2_link:hover 
@@ -71,32 +73,75 @@ a:hover {
 
 #div_box_3
 {
-   width: 50%;
-   border: 1px black dashed;
-   height: 50%;
+   width: 100%;
+   height: auto;
+
+   border: 20px black dashed;
    margin: 0 auto;
    padding: 1%;
 }
+.div_box_4
+{
+   border: 1px black dashed;
+   margin: 0 auto;
+   padding: 1%;
+}
+
 #div_box_6
 {
   background-color: rgb(18, 6, 57);
   width: 100%;
-  height: 40%;
-  color:white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: auto;
+  color: white;
+  font-family: 'Crimson Text', serif;
 }
-p
+#img_logo
 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-}
-img
-{
-width: 75%;
-height: 75%;
+  width: 200px;
+  height: 100px;
+  padding-left:10px;
+  padding-top:0px;
 }
 
 .mySlides 
  {
   display:none;
   }
+
+  .w3-content
+  {
+    padding-top:0px; 
+  }
+
+  .w3-section_1
+  {
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+
+p {
+ font-family: 'Crimson Text', serif;
+ font-size: 18px;
+}
+
+#pre_id
+{
+margin:0;
+padding: 0;
+border: none;
+background: white;
+}
+
+h4
+{
+   font-family: 'Crimson Text', serif;
+}
+
+#logo
+{
+ font-family: 'Anton', sans-serif;
+ color: rgb(18, 6, 57);
+ font-size: 25px;
+ padding-top: 20px;
+ margin-left:0;
+}
