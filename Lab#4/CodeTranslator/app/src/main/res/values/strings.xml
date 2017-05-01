@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CodeTranslator</string>
+    <string name="translate_button">TRANSLATE</string>
+    <string name="input_label">Input:</string>
+    <string name="output_label">Output:</string>
+    <string name="output_field"></string>
+    <string name="morse_code">Morse Code</string>
+    <string name="input_view">Enter text</string>
 </resources>
