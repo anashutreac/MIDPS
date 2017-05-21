@@ -1,5 +1,6 @@
 package mycode.codetranslator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,8 @@ import static mycode.codetranslator.R.id.editText;
 
 public class MorseCode extends AppCompatActivity
         implements View.OnClickListener {
+
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     EditText inputText;
     TextView outputTextView;
@@ -33,6 +36,14 @@ public class MorseCode extends AppCompatActivity
         outputTextView = (TextView) findViewById(R.id.textView5);
         outputTextView.setText("Translation");
 
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, DisplayButtonActivity.class);
+        EditText editText = (EditText) findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     public void onClick(View v) {
@@ -184,7 +195,7 @@ public class MorseCode extends AppCompatActivity
                     default:
                         temp = ("/");
                         messageOutput = messageOutput.concat(temp);
-                        
+
                 }
             }
                  outputTextView.setText(messageOutput);
